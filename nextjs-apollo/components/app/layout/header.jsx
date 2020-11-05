@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import gql from "graphql-tag";
 import { useQuery } from "@apollo/client";
 
@@ -56,10 +56,14 @@ export function Header() {
     <div>
       <div>
         <div>
-          <Link to="/">Dashboard</Link>
+          <Link href="/">
+            <a>Dashboard</a>
+          </Link>
         </div>
         <div>
-          <Link to="/settings">Settings</Link>
+          <Link href="/settings">
+            <a>Settings</a>
+          </Link>
         </div>
       </div>
       <div>

@@ -10,4 +10,4 @@ Every project includes:
 
 - Setup
 - Authentication
-- Todo app
+- Insert and list items
